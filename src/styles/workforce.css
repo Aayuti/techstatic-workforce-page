@@ -1,0 +1,66 @@
+.main-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    backdrop-filter: hue-rotate(90deg);
+}
+
+*::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px transparent;
+    border-radius: 10px;
+    background-color: transparent;
+    z-index: 999;
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+    z-index: 999;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px transparent;
+    background-color: gainsboro;
+    z-index: 999;
+}
+
+.vertical-container {
+    /* grid-column: span 2; */
+    position: relative;
+    left: -255px;
+    border: 2px solid rgb(254, 1, 154);
+    border-radius: 0.5em;
+    box-shadow: 0 0 10px rgba(254, 1, 154, 0.4);
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(254, 1, 154, 0.2);
+    color: aliceblue;
+    width: 260%;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    /* align-items: center; */
+    /* align-content: center; */
+    width: 100%;
+    margin: auto;
+    /* grid-template-columns: repeat(1); */
+    /* grid-area: 2 / 1 / span 2 / span 3; */
+    /* Two columns */
+    /* column-gap: 50px;
+    row-gap: 30px; */
+    /* Adjust the gap between containers */
+}
+
+/* .card-container {
+    margin: 2rem 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    row-gap: 40px;
+} */
